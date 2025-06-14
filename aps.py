@@ -106,7 +106,7 @@ st.markdown("""
 def load_model():
     """Load tokenizer dan model dengan caching untuk performa optimal"""
     model_name = "Alsyabel/AIdetect"
-    tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=false)
+    tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=False)
     model = AutoModelForSequenceClassification.from_pretrained(model_name)
     return tokenizer, model
 
